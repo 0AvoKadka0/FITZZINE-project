@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITZZONE - фитнес клуб</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="Animation.js"></script>
+    <style>
+        .scale {
+         transition: 1s; /* Время эффекта */
+        }
+        .scale:hover {
+         transform: scale(1.2); /* Увеличиваем масштаб */
+        }
+
+        .scale1 {
+            transition: 1s; /* Время эффекта */
+        }
+
+        .scale1:hover {
+         transform: scale(1.06); /* Увеличиваем масштаб */
+        }
+        
+
+        div.gallery {
+            border: 1px solid #ccc;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: left;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .responsive {
+            padding: 0px;
+            float: left;
+            width: 24.99999%;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .responsive {
+            width: 49.99999%;
+            margin: 6px 0;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .responsive {
+            width: 100%;
+            }
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .container {
+            position: relative;
+            width: 50%;
+        }
+
+        .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%)
+        }
+
+        .container:hover .image {
+            opacity: 0.3;
+        }
+
+        .container:hover .middle {
+            opacity: 1;
+        }
+
+        .text {
+            color: white;
+            font-size: 16px;
+            padding: 16px 32px;
+        }
+    </style>
+</head>
+<body>
+    <div class = home>
+        <a href = "#" style="text-decoration: none;"><p>Главная</p></a>
+    </div>
+
+    <div class= Information>
+        <a href = "#Discover" style="text-decoration: none;"><p>Информация</p></a>
+    </div>
+
+    <div class = Coaches>
+        <a href="#Treners_obt" style="text-decoration: none;"><p>Тренеры</p></a>
+    </div>
+
+    <div class = Carts>
+        <a href="#Club_Carts" style="text-decoration: none;"><p>Клубные карты</p></a>
+    </div>
+
+    <div class="Zal_Primer">
+        <img src="https://static.tildacdn.com/tild6333-3364-4134-b737-653061386263/9V0A7161.jpg" class="scale1" width="1090px" height="600">
+    </div>
+
+    <div class="Discover">
+        <p id="Discover"><h3><i>FITZZONE - это современный тренажерный зал, где каждый найдет свою зону комфорта для достижения своих фитнес-целей. Здесь сочетается высокотехнологичное оборудование, инновационные тренировочные программы и профессиональные тренеры, готовые помочь вам стать лучшей версией себя. В FITZZONE царит атмосфера мотивации, энергии и стремления к успеху, делая каждую тренировку эффективной и приятной. Добро пожаловать в мир здоровья и красоты в FITZZONE!</i></h3></p>
+    </div>
+
+    <div class="Treners_obt">
+        <p id="Treners_obt"><h1>Тренерский Состав</h1></p>
+    </div>
+    <div class="Treners_sostav">
+        <div class="Trener1">
+            <img src="https://bulldozer26.ru/images/Treneri/mogilevskiy/8_Mogilevsky_8001200.jpg" class="scale" width="180" height="250">
+        </div>
+        <div class="Trener2">
+            <img src="https://bulldozer26.ru/images/Treneri/Danilov/Danilov_800x1200.jpg" class="scale" width="180" height="250">
+        </div>
+        <div class="Trener3">
+            <img src="https://bulldozer26.ru/images/Treneri/Arsen_shakaryan/11_Shakaryan_800x1200_.jpg" class="scale" width="180" height="250">
+        </div>
+    </div>
+
+    <div class="Club_Carts">
+        <p id="Club_Carts"><h1>Клубные Карты</h1></p>
+    </div>
+    <div class="container">
+    <div class="GOOD_MORNING">
+        <img src="https://bulldozer26.ru/images/All/01._Good_morning.jpg" class="scale1" width="320" height="250">
+        <div class="GOOD_MORNING_txt">
+            <div class="desc">
+                <p><h3><b>GOOD MORNING</b><h3></p>
+                <p><i>Клубная карта «Good morning»<br> время посещения с 7.00 до 10.00.</i></p>
+                <p><b>3 000р.</b></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="DAYTIME">
+        <img src="https://bulldozer26.ru/images/All/08._Day_time.jpg" class="scale1" width="320" height="250">
+        <div class="DAYTIME_txt">
+            <div class="desc">
+                <p><h3><b>DAYTIME</b><h3></p>
+                <p><i>Клубная карта DAYTIME<br> время посещения с 10.00 до 16.00.</i></p>
+                <p><b>3 500р.</b></p>
+            </div>
+        </div>
+    </div>
+</body>
+</body>
+
+</html>
